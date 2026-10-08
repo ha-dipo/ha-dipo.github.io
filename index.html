@@ -15,7 +15,6 @@
   <header class="site-header wrap">
     <a class="wordmark" href="#main">HA-DiPO<span aria-hidden="true">.</span></a>
     <nav aria-label="Main navigation">
-      <a href="#overview">Overview</a>
       <a href="#method">Method</a>
       <a href="#sim2sim">Sim2Sim</a>
       <a href="#sim2real">Sim2Real</a>
@@ -48,18 +47,9 @@
       </figure>
     </section>
 
-    <section class="overview section wrap" id="overview" aria-labelledby="overview-title">
-      <div class="section-label"><span class="section-index">01 / Overview</span><h2 id="overview-title">Cooperation through<br> a shared load.</h2></div>
-      <div class="prose">
-        <p class="large-copy">When robots carry an unfixed object together, every movement changes what their partners must do.</p>
-        <p>Different morphologies make this coupling harder: legged and wheeled-legged robots have different dynamics, action interfaces, and locomotion controllers. The shared payload must remain supported while each robot responds to its own observations.</p>
-        <p><strong>HA-DiPO</strong> (Heterogeneous-Agent Diffusion Policy Optimization) learns an independent diffusion policy for each agent. A centralized critic guides sequential policy updates during training. At execution, each robot acts from its local observation history through a frozen, embodiment-specific locomotion controller.</p>
-      </div>
-    </section>
-
     <section class="method-band" id="method" aria-labelledby="method-title">
       <div class="wrap section">
-        <div class="section-heading"><div><span class="section-index">02 / Method</span><h2 id="method-title">Learn together. Act locally.</h2></div><p>Task coordination above<br> embodiment-specific locomotion.</p></div>
+        <div class="section-heading"><div><span class="section-index">01 / Method</span><h2 id="method-title">Learn together. Act locally.</h2></div><p>Task coordination above<br> embodiment-specific locomotion.</p></div>
         <figure class="paper-overview">
           <a href="assets/images/figure-1-overview-20260925.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 1 at full size in a new tab">
             <img src="assets/images/figure-1-overview-20260925.png" width="2590" height="1065" loading="lazy" alt="Figure 1 from the manuscript. Four panels show heterogeneous loose-contact transport, centralized training with twin critics and sequential policy updates, hierarchical decentralized execution, and a conditional diffusion actor that maps Gaussian noise to bounded actions." aria-describedby="figure-1-caption">
@@ -80,7 +70,7 @@
     </section>
 
     <section class="section wrap perception" id="perception" aria-labelledby="perception-title">
-      <div class="section-heading"><div><span class="section-index">03 / Perception</span><h2 id="perception-title">Onboard Payload Perception</h2></div></div>
+      <div class="section-heading"><div><span class="section-index">02 / Perception</span><h2 id="perception-title">Onboard Payload Perception</h2></div></div>
       <p class="section-intro">The estimator combines onboard 3-D LiDAR and IMU measurements to recover the payload center and axis in each robot’s local frame. Three retroreflective bands provide geometric constraints for association and filtering.</p>
       <figure class="paper-overview perception-figure">
         <a href="assets/images/figure-2-onboard-perception.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 2 at full size in a new tab">
@@ -96,7 +86,7 @@
     </section>
 
     <section class="section wrap demonstrations" id="demonstrations" aria-labelledby="demos-title">
-      <div class="section-heading" id="sim2sim"><div><span class="section-index">04 / Sim2Sim</span><h2 id="demos-title">Sim2Sim · Cooperative transport in MuJoCo</h2></div></div>
+      <div class="section-heading" id="sim2sim"><div><span class="section-index">03 / Sim2Sim</span><h2 id="demos-title">Sim2Sim · Cooperative transport in MuJoCo</h2></div></div>
       <p class="section-intro">Policies trained in Isaac Lab, executed in MuJoCo with B2 + B2W and B2 + B2 teams.</p>
       <div class="demo-grid">
         <article class="demo-card">
@@ -183,7 +173,7 @@
     </section>
 
     <section class="section wrap sim2real" id="sim2real" aria-labelledby="sim2real-title">
-      <div class="section-heading"><div><span class="section-index">05 / Sim2Real</span><h2 id="sim2real-title">Sim2Real · Real-robot experiments</h2></div></div>
+      <div class="section-heading"><div><span class="section-index">04 / Sim2Real</span><h2 id="sim2real-title">Sim2Real · Real-robot experiments</h2></div></div>
       <div class="demo-grid" id="real-robot-experiments">
         <article class="demo-card">
           <div class="video-frame">
