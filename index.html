@@ -50,13 +50,13 @@
       <div class="wrap section">
         <div class="section-heading"><div><span class="section-index">01 / Method</span><h2 id="method-title">Learn together. Act locally.</h2></div><p>Task coordination above<br> embodiment-specific locomotion.</p></div>
         <figure class="paper-overview">
-          <a href="assets/images/figure-1-overview-20260925.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 1 at full size in a new tab">
-            <img src="assets/images/figure-1-overview-20260925.png" width="2590" height="1065" loading="lazy" alt="Figure 1 from the manuscript. Four panels show heterogeneous transport of an unfixed payload, centralized training from simulator interaction without demonstrations, hierarchical decentralized execution with frozen robot-specific motion policies, and conditional diffusion sampling of bounded actions." aria-describedby="figure-1-caption">
+          <a href="assets/images/figure-1-overview-20261016.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 1 at full size in a new tab">
+            <img src="assets/images/figure-1-overview-20261016.png" width="2540" height="920" loading="lazy" alt="Figure 1 from the manuscript. Four panels show heterogeneous transport of an unfixed payload, centralized training from simulator interaction without demonstrations, hierarchical decentralized execution with frozen robot-specific motion policies, and conditional diffusion sampling of bounded actions." aria-describedby="figure-1-caption">
           </a>
           <figcaption>
             <div class="figure-caption-row">
-              <p id="figure-1-caption"><strong>Figure 1. Overview of HA-DiPO.</strong> (a) Heterogeneous robots support an unfixed shared payload. (b) Centralized twin critics guide sequential policy updates through a diffusion-path variational objective using simulator interaction without demonstrations. (c) Local histories and task commands feed each independent diffusion actor; a frozen, embodiment-specific PPO-pretrained policy tracks its motion commands. (d) A conditional network drives iterative sampling from Gaussian noise; terminal samples are mapped to bounded actions. Distribution sketches illustrate representational flexibility; orange dashed arrows denote training operations.</p>
-              <a class="text-link" href="assets/images/figure-1-overview-20260925.png" target="_blank" rel="noopener noreferrer" aria-label="View Figure 1 at full size in a new tab">View full size <span aria-hidden="true">↗</span></a>
+              <p id="figure-1-caption"><strong>Figure 1. Overview of HA-DiPO.</strong> (a) Heterogeneous robots support an unfixed shared payload. (b) Centralized twin critics guide sequential policy updates through a diffusion-path variational objective using simulator interaction without demonstrations. (c) Local histories and the team command form the input to each independent diffusion actor; a frozen, embodiment-specific PPO-pretrained policy tracks its motion commands. (d) A conditional network drives iterative sampling from Gaussian noise; terminal samples are mapped to bounded actions. Distribution sketches illustrate representational flexibility; orange dashed arrows denote training operations.</p>
+              <a class="text-link" href="assets/images/figure-1-overview-20261016.png" target="_blank" rel="noopener noreferrer" aria-label="View Figure 1 at full size in a new tab">View full size <span aria-hidden="true">↗</span></a>
             </div>
           </figcaption>
         </figure>
@@ -72,13 +72,13 @@
       <div class="section-heading"><div><span class="section-index">02 / Perception</span><h2 id="perception-title">Onboard Payload Perception</h2></div></div>
       <p class="section-intro">The estimator combines onboard 3-D LiDAR and IMU measurements to recover the payload center and axis in each robot’s local frame. Reflective markers provide geometric constraints for association and filtering. Hardware deployment uses five markers; Figure 2 illustrates a three-band example.</p>
       <figure class="paper-overview perception-figure">
-        <a href="assets/images/figure-2-onboard-perception-20261012.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 2 at full size in a new tab">
-          <img src="assets/images/figure-2-onboard-perception-20261012.png" width="1524" height="1332" loading="lazy" alt="Figure 2. Panels a and b show an example three-band layout and geometry, followed by the estimation pipeline. Panels c, d, and e show raw points, filtered returns, and the estimated rod axis from the same real-robot static LiDAR scan." aria-describedby="figure-2-caption">
+        <a href="assets/images/figure-2-onboard-perception-20261016.png" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 2 at full size in a new tab">
+          <img src="assets/images/figure-2-onboard-perception-20261016.png" width="1482" height="1230" loading="lazy" alt="Figure 2. Panels a and b show an example three-band layout and geometry, followed by the estimation pipeline. Panels c, d, and e show raw points, filtered returns, and the estimated rod axis from the same real-robot static LiDAR scan." aria-describedby="figure-2-caption">
         </a>
         <figcaption>
           <div class="figure-caption-row">
             <p id="figure-2-caption"><strong>Figure 2. Geometry-constrained onboard payload perception.</strong> Panels (a)–(b) show an example three-band layout and geometry, with the estimation pipeline below. Panels (c)–(e) show raw points, filtered returns, and cluster centers from one static real-robot LiDAR scan. White circles mark the cluster centers; magenta indicates the constrained rod-axis estimate.</p>
-            <a class="text-link" href="assets/images/figure-2-onboard-perception-20261012.png" target="_blank" rel="noopener noreferrer" aria-label="View Figure 2 at full size in a new tab">View full size <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="assets/images/figure-2-onboard-perception-20261016.png" target="_blank" rel="noopener noreferrer" aria-label="View Figure 2 at full size in a new tab">View full size <span aria-hidden="true">↗</span></a>
           </div>
         </figcaption>
       </figure>
